@@ -1,5 +1,8 @@
-module.exports = eleventyConfig => {
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+module.exports = config => {
+  config.addLayoutAlias('post', 'layouts/post.njk');
+
+  // Passthru
+  config.addPassthroughCopy('src/admin/config.yml');
 
   return {
     templateFormats: ['md', 'njk'],
