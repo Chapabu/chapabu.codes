@@ -1,0 +1,74 @@
+backend:
+  name: github
+  repo: chapabu/chapabu.codes
+publish_mode: editorial_workflow
+media_folder: 'src/images/uploads'
+public_folder: 'images'
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - name: 'home'
+        label: 'Homepage'
+        create: false
+        delete: false
+        file: src/index.md
+        fields:
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: post
+          - label: Avatar
+            name: avatar
+            widget: image
+          - label: Blurb
+            name: blurb
+            widget: markdown
+          - label: Metadata
+            name: metadata
+            widget: object
+            fields:
+              - label: Title
+                name: meta_title
+                widget: string
+              - label: Description
+                name: meta_description
+                widget: string
+              - label: Social image
+                name: social_image
+                widget: image
+  - name: 'blog'
+    label: 'Blog post'
+    folder: 'src/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: post
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish date
+        name: publish_date
+        widget: datetime
+      - label: Image
+        name: image
+        widget: image
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Metadata
+        name: metadata
+        widget: object
+        fields:
+          - label: Title
+            name: meta_title
+            widget: string
+          - label: Description
+            name: meta_description
+            widget: string
+          - label: Social image
+            name: social_image
+            widget: image
