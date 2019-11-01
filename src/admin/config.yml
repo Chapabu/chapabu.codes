@@ -17,7 +17,7 @@ collections:
           - label: Layout
             name: layout
             widget: hidden
-            default: post
+            default: layouts/home.njk
           - label: Avatar
             name: avatar
             widget: image
@@ -29,10 +29,10 @@ collections:
             widget: object
             fields:
               - label: Title
-                name: meta_title
+                name: title
                 widget: string
               - label: Description
-                name: meta_description
+                name: description
                 widget: string
               - label: Social image
                 name: social_image
@@ -65,10 +65,10 @@ collections:
         widget: object
         fields:
           - label: Title
-            name: meta_title
+            name: title
             widget: string
           - label: Description
-            name: meta_description
+            name: description
             widget: string
           - label: Social image
             name: social_image
