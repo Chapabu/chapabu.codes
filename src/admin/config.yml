@@ -3,7 +3,7 @@ backend:
   repo: chapabu/chapabu.codes
 publish_mode: editorial_workflow
 media_folder: 'src/images/uploads'
-public_folder: 'images'
+public_folder: 'images/uploads'
 collections:
   - name: 'pages'
     label: 'Pages'

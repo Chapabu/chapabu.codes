@@ -1,8 +1,10 @@
 module.exports = config => {
+  // Layout aliases
   config.addLayoutAlias('post', 'layouts/post.njk');
 
-  // Passthru
+  // Passthrough
   config.addPassthroughCopy('src/admin/config.yml');
+  config.addPassthroughCopy('src/images');
 
   return {
     templateFormats: ['md', 'njk'],
