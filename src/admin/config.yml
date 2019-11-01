@@ -37,6 +37,7 @@ collections:
               - label: Social image
                 name: social_image
                 widget: image
+                required: false
   - name: 'blog'
     label: 'Blog post'
     folder: 'src/posts'
