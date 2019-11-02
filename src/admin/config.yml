@@ -17,12 +17,8 @@ collections:
         label: 'Homepage'
         create: false
         delete: false
-        file: content/home.yml
+        file: src/index.md
         fields:
-          - label: Permalink
-            name: permalinee
-            widget: hidden
-            default: /
           - label: Layout
             name: layout
             widget: hidden
@@ -84,5 +80,3 @@ collections:
             name: social_image
             widget: image
             required: false
-  # - name: 'external_post'
-  #   label: 'External posts'
