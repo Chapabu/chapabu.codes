@@ -4,6 +4,11 @@ backend:
 publish_mode: editorial_workflow
 media_folder: 'src/images/uploads'
 public_folder: 'images/uploads'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: chapabu
+    api_key: 185178558152674
 collections:
   - name: 'pages'
     label: 'Pages'
@@ -12,8 +17,12 @@ collections:
         label: 'Homepage'
         create: false
         delete: false
-        file: src/index.md
+        file: content/home.yml
         fields:
+          - label: Permalink
+            name: permalinee
+            widget: hidden
+            default: /
           - label: Layout
             name: layout
             widget: hidden
@@ -38,8 +47,8 @@ collections:
                 name: social_image
                 widget: image
                 required: false
-  - name: 'blog'
-    label: 'Blog post'
+  - name: 'post'
+    label: 'Posts'
     folder: 'src/posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -60,6 +69,7 @@ collections:
       - label: Body
         name: body
         widget: markdown
+        required: false
       - label: Metadata
         name: metadata
         widget: object
@@ -73,3 +83,6 @@ collections:
           - label: Social image
             name: social_image
             widget: image
+            required: false
+  # - name: 'external_post'
+  #   label: 'External posts'
