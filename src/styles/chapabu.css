@@ -1,0 +1,6 @@
+@import '00-properties.css';
+@import '05-typography.css';
+
+.foo {
+  color: red;
+}

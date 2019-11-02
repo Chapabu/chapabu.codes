@@ -8,9 +8,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "11ty": "eleventy"
+    "11ty": "eleventy",
+    "styles:build": "postcss src/styles/chapabu.css -d src/site/styles --map",
+    "styles:watch": "postcss src/styles/chapabu.css -d src/site/styles --map --watch --verbose"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0"
+    "@11ty/eleventy": "^0.9.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.21",
+    "postcss-cli": "^6.1.3",
+    "postcss-import": "^12.0.1"
   }
 }
