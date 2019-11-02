@@ -1,6 +1,9 @@
+/* SASS? Pfft... */
+
+/* VENDOR */
+@import 'modern-css-reset';
+
+/* PROJECT */
 @import '00-properties.css';
 @import '05-typography.css';
-
-.foo {
-  color: red;
-}
+@import '10-components.css';

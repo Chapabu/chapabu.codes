@@ -8,9 +8,11 @@
   {% if metadata.description %}
     <meta name="description" content="{{ metadata.description }}" />
   {% endif %}
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/chapabu.css">
 </head>
 <body>
+  <div class="top-bar"></div>
   {{ content | safe }}
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>

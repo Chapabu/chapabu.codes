@@ -7,6 +7,9 @@ module.exports = config => {
   config.addPassthroughCopy('src/site/images');
   config.addPassthroughCopy('src/site/styles');
 
+  // Don't ignore .gitignore files
+  config.setUseGitIgnore(false);
+
   return {
     templateFormats: ['md', 'njk'],
     dir: {
