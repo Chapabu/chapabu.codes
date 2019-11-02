@@ -13,7 +13,9 @@
 </head>
 <body>
   <div class="top-bar"></div>
-  {{ content | safe }}
+  <div class="layout">
+    {{ content | safe }}
+  </div>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
   if (window.netlifyIdentity) {

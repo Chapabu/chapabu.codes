@@ -1,0 +1,15 @@
+.superhero-header {
+  /* prettier-ignore */
+  --grid-area:
+    'superhero'
+    'blurb';
+
+  display: grid;
+  grid-area: var(--grid-area);
+  grid-gap: 3.75rem;
+}
+
+.superhero-header .superhero-header__heading {
+  font-size: var(--scale-300);
+  font-weight: 400;
+}

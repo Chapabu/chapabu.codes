@@ -1,0 +1,33 @@
+.superhero {
+  display: grid;
+  row-gap: var(--scale-300);
+}
+
+.superhero > * {
+  margin: 0 auto;
+}
+
+.superhero__avatar {
+  max-width: 275px;
+  max-height: 275px;
+}
+
+.superhero__subtext {
+  display: flex;
+  margin: unset;
+}
+
+.superhero__subtext span {
+  flex-shrink: 0;
+  padding: 0 0.625em;
+}
+
+.superhero__subtext::before,
+.superhero__subtext::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--c-primary);
+  margin: auto;
+}

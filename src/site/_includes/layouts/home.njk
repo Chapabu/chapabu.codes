@@ -1,7 +1,18 @@
 ---
 layout: layouts/html.njk
 ---
+<header role="banner" class="superhero-header">
+  <div class="superhero">
+    <img class="superhero__avatar avatar" height="275px" width="275px" src="{{ avatar }}" alt="" />
+    {% include 'partials/superhero-logo-text.njk' %}
+    <div class="superhero__subtext">
+      <span>web tinkerer</span>
+    </div>
+  </div>
+  <h1 class="superhero-header__heading">
+    {{ blurb | escape | nl2br }}
+  </h1>
+</header>
 <main>
-  <img class="avatar" src="{{avatar}}" alt="">
-  {{blurb}}
+
 </main>

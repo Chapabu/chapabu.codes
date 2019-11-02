@@ -4,6 +4,10 @@
 @import 'modern-css-reset';
 
 /* PROJECT */
-@import '00-properties.css';
-@import '05-typography.css';
-@import '10-components.css';
+@import '00-foundation/index.css';
+@import '05-components/index.css';
+@import '10-blocks/00-superhero-header.css';
+
+.layout {
+  padding: 20px;
+}
