@@ -44,10 +44,11 @@ collections:
                 widget: image
                 required: false
   - name: 'post'
-    label: 'Posts'
+    label: 'Post'
     folder: 'src/posts'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
+    preview_path: 'posts/{{slug}}'
     fields:
       - label: Layout
         name: layout
@@ -57,7 +58,7 @@ collections:
         name: title
         widget: string
       - label: Publish date
-        name: publish_date
+        name: date
         widget: datetime
       - label: Image
         name: image
