@@ -3,13 +3,13 @@ module.exports = config => {
   config.addLayoutAlias('post', 'layouts/post.njk');
 
   // Passthrough
-  config.addPassthroughCopy('src/site/admin/config.yml');
-  config.addPassthroughCopy('src/site/images');
+  config.addPassthroughCopy('src/admin/config.yml');
+  config.addPassthroughCopy('src/images');
 
   return {
     templateFormats: ['md', 'njk'],
     dir: {
-      input: 'src/site',
+      input: 'src',
       output: 'dist'
     }
   };
