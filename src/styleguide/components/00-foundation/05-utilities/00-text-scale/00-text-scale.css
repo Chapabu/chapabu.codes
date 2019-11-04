@@ -1,0 +1,27 @@
+.text-100 {
+  font-size: var(--scale-100);
+}
+
+.text-200 {
+  font-size: var(--scale-200);
+}
+
+.text-300 {
+  font-size: var(--scale-300);
+}
+
+.text-400 {
+  font-size: var(--scale-400);
+}
+
+.text-500 {
+  font-size: var(--scale-500);
+}
+
+.text-600 {
+  font-size: var(--scale-600);
+}
+
+.text-max {
+  font-size: var(--scale-max);
+}

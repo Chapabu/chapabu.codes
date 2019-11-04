@@ -1,2 +1,3 @@
 @import '00-global/index.css';
-@import '05-typography/index.css';
+@import '05-utilities/index.css';
+@import '10-typography/index.css';

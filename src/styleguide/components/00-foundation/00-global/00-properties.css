@@ -9,6 +9,9 @@
   --scale-200: 1rem; /* 16px */
   --scale-300: 1.25rem; /* 20px */
   --scale-400: 1.563rem; /* 25px */
+  --scale-500: 1.953rem; /* 31.25px */
+  --scale-600: 2.441rem; /* 39.06px */
+  --scale-max: 3.052rem; /* 48.83px */
 
   /* Typography */
   --f-size-small: var(--scale-200);
