@@ -10,6 +10,13 @@ module.exports = config => {
   // Don't ignore .gitignore files
   config.setUseGitIgnore(false);
 
+  // BrowserSync config
+  config.setBrowserSyncConfig({
+    open: true,
+    browser: 'firefox developer edition',
+    https: true
+  });
+
   return {
     templateFormats: ['md', 'njk'],
     dir: {

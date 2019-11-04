@@ -5,7 +5,7 @@ const nunjucks = require('@frctl/nunjucks');
 /**
  * PROJECT
  */
-fractal.set('project.title', 'Digital Platform');
+fractal.set('project.title', 'Chapabu.codes');
 
 /**
  * TEMPLATING
@@ -14,6 +14,16 @@ fractal.components.engine(nunjucks);
 fractal.components.set('ext', '.njk');
 // We manually set this as our base template lives under the _fractal subdirectory.
 fractal.components.set('default.preview', '@preview');
+
+/**
+ * BROWSERSYNC
+ */
+fractal.web.set('server.sync', true);
+fractal.web.set('server.syncOptions', {
+  open: true,
+  browser: 'firefox developer edition',
+  https: true
+});
 
 /**
  * SOURCES
@@ -25,7 +35,7 @@ fractal.components.set(
 
 fractal.docs.engine('@frctl/nunjucks');
 fractal.docs.set('path', path.join(__dirname, 'src/styleguide/docs'));
-// fractal.web.set('static.path', path.join(__dirname, 'dist/styleguide'));
+fractal.web.set('static.path', path.join(__dirname, 'src/assets/'));
 
 /**
  * BUILD

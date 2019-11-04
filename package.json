@@ -10,10 +10,10 @@
   "scripts": {
     "11ty:build": "eleventy",
     "11ty:watch": "eleventy --serve",
-    "styles:build": "postcss src/styles/chapabu.css -o src/site/styles/chapabu.min.css --map",
-    "styles:watch": "postcss src/styles/chapabu.css -o src/site/styles/chapabu.min.css --map --watch --verbose",
-    "start": "npm-run-all -p *:watch",
-    "fractal:serve": "fractal --serve"
+    "styles:build": "postcss src/styleguide/components/chapabu.css -o src/assets/styles/chapabu.min.css --map",
+    "styles:watch": "postcss src/styleguide/components/chapabu.css -o src/assets/styles/chapabu.min.css --map --watch --verbose",
+    "start": "npm-run-all -p *:watch fractal:serve",
+    "fractal:serve": "fractal start"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",

@@ -1,0 +1,6 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--c-off-black);
+  font-size: var(--f-size-regular);
+  line-height: 1.45;
+}
