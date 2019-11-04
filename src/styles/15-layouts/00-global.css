@@ -1,0 +1,6 @@
+.l-global {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1.25rem;
+  padding: 20px;
+}

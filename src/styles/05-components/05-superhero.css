@@ -1,6 +1,7 @@
 .superhero {
   display: grid;
   row-gap: var(--scale-300);
+  max-width: 25rem;
 }
 
 .superhero > * {
@@ -8,8 +9,8 @@
 }
 
 .superhero__avatar {
-  max-width: 275px;
-  max-height: 275px;
+  max-width: 50%;
+  height: auto;
 }
 
 .superhero__subtext {
@@ -30,4 +31,10 @@
   height: 2px;
   background-color: var(--c-primary);
   margin: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .superhero__avatar {
+    max-width: 100%;
+  }
 }

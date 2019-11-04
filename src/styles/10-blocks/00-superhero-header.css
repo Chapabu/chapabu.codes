@@ -9,6 +9,10 @@
   grid-gap: 3.75rem;
 }
 
+.superhero-header .superhero-header__superhero {
+  margin: 0 auto;
+}
+
 .superhero-header .superhero-header__heading {
   font-size: var(--scale-300);
   font-weight: 400;

@@ -7,7 +7,4 @@
 @import '00-foundation/index.css';
 @import '05-components/index.css';
 @import '10-blocks/00-superhero-header.css';
-
-.layout {
-  padding: 20px;
-}
+@import '15-layouts/index.css';
