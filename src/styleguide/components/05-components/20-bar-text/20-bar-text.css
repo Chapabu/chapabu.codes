@@ -1,0 +1,18 @@
+.bar-text {
+  display: flex;
+}
+
+.bar-text span {
+  flex-shrink: 0;
+  padding: 0 0.55em;
+}
+
+.bar-text::before,
+.bar-text::after {
+  content: '';
+  display: block;
+  height: 0.125em;
+  width: 100%;
+  background-color: var(--c-primary);
+  margin: auto;
+}
