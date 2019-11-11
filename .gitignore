@@ -1,6 +1,6 @@
 # Project
 *.min.*
-
+src/**/seed*.md
 
 # Logs
 logs
