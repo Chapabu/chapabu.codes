@@ -1,0 +1,13 @@
+<img
+  src="{{ src }}"
+  alt="{{alt}}"
+  {% if srcset %}
+    srcset="{{srcset | join(', ')}}"
+  {% endif %}
+  {% if sizes %}
+    sizes="{{sizes | join(', ')}}"
+  {% endif %}
+  {% if classes %}
+    class="{{classes | join(' ')}}"
+  {% endif %}
+  />
